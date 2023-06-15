@@ -1,0 +1,8 @@
+---
+# tasks file for create_directory
+- name: Create the directory
+  file:
+    path: "{{ directory_path }}"
+    state: directory
+    mode: "{{ directory_mode }}"
+

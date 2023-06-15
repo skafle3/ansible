@@ -1,14 +1,7 @@
 ---
-- name: Custom Task on EC2 Instances
+- name: Playbook to create a directory on Amazon Linux
   hosts: ec2_instances
   become: yes
-
-  tasks:
-    - name: Check Disk Usage
-      command: df -h
-      register: disk_usage_output
-
-    - name: Display Disk Usage Output
-      debug:
-        var: disk_usage_output.stdout_lines
+  roles:
+    - create_directory
 

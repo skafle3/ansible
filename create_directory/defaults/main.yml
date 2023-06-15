@@ -1,0 +1,5 @@
+---
+# defaults file for create_directory
+directory_path: /home/ec2-user/ansibleishere
+directory_mode: "0755"
+
